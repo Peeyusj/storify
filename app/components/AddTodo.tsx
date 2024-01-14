@@ -8,7 +8,7 @@ const AddTodo = () => {
   const [task, setTask] = useState <NewTodo | null> (null);
   const { refresh } = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault()
     try {
       if (task) {
@@ -37,7 +37,7 @@ const AddTodo = () => {
         />
         <button
           type="button"
-          onClick={handleSubmit}
+          onClick={(e: React.MouseEvent<HTMLButtonElement>) => handleSubmit(e)}
           className="p-4 shrink-0 block  rounded-full bg-gradient-to-b from-blue-400 to-gray-600"
         >
         Submit
