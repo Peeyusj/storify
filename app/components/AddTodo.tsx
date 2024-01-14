@@ -37,7 +37,7 @@ const AddTodo = () => {
         />
         <button
           type="button"
-          onClick={(e: React.MouseEvent<HTMLButtonElement>) => handleSubmit(e)}
+          onClick={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}
           className="p-4 shrink-0 block  rounded-full bg-gradient-to-b from-blue-400 to-gray-600"
         >
         Submit
