@@ -1,7 +1,13 @@
+"use client"
+
+import { UserButton } from "@clerk/nextjs";
+
 export default function Home() {
   return (
-      <div className=" bg-slate-200 w-full  max-w-md min-h-screen min-w-1/2 p-10 mx-auto rounded-xl ">
+      <div className="">
        Hello world
+       only Authenticated user can see this
+      <UserButton afterSignOutUrl="/" />
       </div>
   );
 }

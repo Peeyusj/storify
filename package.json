@@ -12,12 +12,21 @@
     "db:generate": "drizzle-kit generate:pg"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.29.5",
+    "@clerk/themes": "^1.7.9",
     "@next/env": "^14.1.0",
+    "@radix-ui/react-slot": "^1.0.2",
     "@vercel/postgres": "^0.5.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "drizzle-orm": "^0.29.3",
+    "lucide-react": "^0.321.0",
     "next": "14.0.4",
+    "next-themes": "^0.2.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
