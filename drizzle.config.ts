@@ -5,7 +5,7 @@ export default defineConfig({
   out: "./drizzle",
   driver: "pg",
   dbCredentials: {
-    connectionString: process.env.POSTGRES_URL!,
+    connectionString: `${process.env.POSTGRES_URL}?sslmode=require`,
   },
   verbose: true,
   strict: true,

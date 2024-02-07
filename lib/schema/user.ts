@@ -11,10 +11,12 @@ export const users = pgTable(
     {
     id: serial("id").primaryKey(),
     name: text("name").notNull(),
-    email:
-    text("email").notNull(),
-    image: text("image").notNull(),
-    createdAt: timestamp("createdAt").defaultNow()
+    externalUserId: text("externalUserId").unique(),
+    bio: text("bio"),
+    email:text("email").notNull(),
+    image: text("image"),
+    createdAt: timestamp("createdAt").defaultNow(),
+    updatedAt: timestamp("updatedAt").defaultNow(),
     },
     (users) => {
     return {
